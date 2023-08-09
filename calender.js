@@ -605,7 +605,7 @@ function uptablef() {
 }
 
 // Check the current page's URL and run the function -> avoid errors
-if (window.location.href.includes("file:///C:/Users/Pc/Desktop/Turtle%20website/2nd%20sem%20work/ticketspage.html")) {
+if (window.location.href.includes("ticketspage.html")) {
   currentdatef();
   calenderf();
   ticketcountf();
@@ -738,17 +738,17 @@ function updateTable2() {
 }
 
  // Run the update table function on details page
-if (window.location.href.includes("file:///C:/Users/Pc/Desktop/Turtle%20website/2nd%20sem%20work/detailspage.html")) {
+if (window.location.href.includes("detailspage.html")) {
   updateTable2();
 }
 
  // Run the update table function on payment page
-if (window.location.href.includes("file:///C:/Users/Pc/Desktop/Turtle%20website/2nd%20sem%20work/paypage.html")) {
+if (window.location.href.includes("paypage.html")) {
   updateTable2();
 }
 
  // Run the update table function on confirmation page
-if (window.location.href.includes("file:///C:/Users/Pc/Desktop/Turtle%20website/2nd%20sem%20work/confirm.html")) {
+if (window.location.href.includes("confirm.html")) {
   updateTable2();
 }
 
@@ -876,7 +876,7 @@ function myFunction() {
   
 }
 // To run the function to update summary table on confirmation page
-if (window.location.href.includes("file:///C:/Users/Pc/Desktop/Turtle%20website/2nd%20sem%20work/confirm.html")) {
+if (window.location.href.includes("confirm.html")) {
     myFunction();
 }
 
@@ -903,7 +903,7 @@ form.addEventListener('submit', function (e) {
 }
 
 //To run the form validation functions on the details page
-if (window.location.href.includes("file:///C:/Users/Pc/Desktop/Turtle%20website/2nd%20sem%20work/detailspage.html")) {
+if (window.location.href.includes("detailspage.html")) {
   form1f();
 }
 
@@ -1004,6 +1004,6 @@ function form2f() {
 });
 }
 //To run the form validation functions on the payment page
-if (window.location.href.includes("file:///C:/Users/Pc/Desktop/Turtle%20website/2nd%20sem%20work/paypage.html")) {
+if (window.location.href.includes("paypage.html")) {
   form2f();
 }
