@@ -1,0 +1,1244 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  background-color: #fffee6;
+  font-family: "Poppins", sans-serif;
+}
+/* hader */
+header{
+background: rgb(116,157,53);
+background: linear-gradient(90deg, rgba(116,157,53,1) 0%, rgba(136,176,75,1) 36%, rgba(216,255,157,1) 100%);
+height: 60px;
+
+}
+header li{
+  list-style: none;
+  padding-top: 1.4%;
+  padding-left: 3%;
+  color: white;
+}
+header li a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+header li a:hover{
+  color: #d0ff8b;
+}
+header li a i{
+  padding-right: 5px;
+}
+header h2{
+  text-align: center;
+  margin-top: -1.5%;
+  color: white;
+}
+header p{
+  position: absolute;
+  top: 2.5%;
+  right: 3%;
+  font-weight: bold;
+  font-size: small;
+  
+}
+/* Booking navigation */
+.booknav{
+  display: flex;
+  padding-top: 1%;
+  padding-left: 3%;
+  padding-bottom: 1%;
+  background-color:rgba(216,255,157,1) ;
+  
+
+  
+}
+.booknav li{
+  list-style: none;
+
+} 
+.booknav li a{
+  text-decoration: none;
+  color:rgb(122, 122, 122);
+  padding-right: 30px;
+  transition: transform .2s;
+  font-size: 16px;
+  font-weight: bold;
+}
+.booknav li a i{
+  padding-left: 20px;
+}
+.booknav #active{
+  color: #000000;
+  
+}
+.booknav .nextlink:hover{
+  
+  color:  rgb(98, 145, 28);
+  
+}
+.booknav li a span{
+  margin-left: 15px;
+  font-size: large;
+}
+
+/* Section 1 */
+#calandsummary{
+  display: flex;
+  margin-left: 16%;
+  margin-right: 16%;
+  margin-top: 2%;
+  column-gap: 12%;
+}
+#calandsummary .rscalender{
+  width: 50%;
+}
+
+.rscalender h3{
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 10px;
+}
+
+#calandsummary .lstable{
+  width: 50%;
+}
+/* Calender */
+
+.container-calendar {
+  width: 400px;
+  height: 370px;
+  border: 1px solid black;
+  padding: 10px;
+  background-color:#e1fdb8;
+  border-radius: 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+.button-container-calendar button {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  zoom: 1.5;
+  background:#88B04B;
+  color: #fff;
+  border: 1px solid #88B04B;
+  border-radius: 4px;
+  padding: 5px 10px;
+  top: 10px;
+  outline: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.table-calendar {
+  border-collapse: collapse;
+  width: 100%;
+  padding: 0;
+  border-top: 1px solid #88B04B;
+}
+
+.table-calendar td, .table-calendar th {
+  padding: 10px;
+  text-align: center;
+  vertical-align: top;
+}
+
+#monthHeader {
+  text-transform: uppercase;
+  color: #999;
+  margin: 0;
+  font-size: 30px;
+}
+
+#yearHeader {
+  margin: 0 0 10px;
+  padding: 0 3px;
+  font-size: 20px;
+  color: #999;
+}
+
+.date-picker {
+   cursor: pointer;
+}
+
+.date-picker.selected {
+  font-weight: bolder; 
+  border-radius: 3em;
+  background-color: #afd548;
+  
+}
+
+.date-picker.selected span {
+  color: white;
+}
+
+/* sunday */
+.date-picker:nth-child(1), .red-text {
+  color: red;
+}
+
+
+/* friday */
+.date-picker:nth-child(6) {
+  color: green;
+}
+
+#monthAndYear {
+  text-align: center;
+  margin-top: 0;
+}
+
+.button-container-calendar {
+  position: relative;
+  margin-bottom: 1em;
+  overflow: hidden;
+  clear: both;
+  text-align: center;
+}
+
+#previous {
+  float: left;
+}
+
+#next {
+  float: right;
+}
+
+.footer-container-calendar {
+  margin-top: 1em;
+  border-top: 1px solid #dadada;
+  padding: 10px 0;
+  display: none;
+}
+
+.footer-container-calendar select {
+  cursor: pointer;
+  display: inline-block;
+  zoom: 1;
+  background: #ffffff;
+  color: #585858;
+  border: 1px solid #bfc5c5;
+  border-radius: 3px;
+  padding: 5px 1em;
+}
+
+#date-picked {
+  text-align: center;
+  padding-top: 3px;
+  margin-left: 45px;
+  color: black;
+  font-size: 18px;
+  border: 1px solid black;
+  width: 300px;
+  height: 30px;border-radius: 1em;
+  background-color: #e1fdb8 ;
+  margin-top: 20px;
+}
+
+/* Table */
+.lstable .tbox{
+  position: fixed;
+  overflow: hidden;
+  margin-bottom: 200px;
+  
+}
+.lstable h3{
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 10px;
+  
+}
+#mytable tr td .datediv {
+  width: 100px;
+}
+.lstable table {
+    border-collapse: collapse;
+    width: 450px;
+    background-color: #e1fdb8 ;
+    font-family: Arial, sans-serif;   
+}
+
+.lstable .tbox #myTable tr td ul li{
+  list-style: none;
+}
+#myTable2 tr td ul li{
+  list-style: none;
+}
+.lstable table th, .lstable table td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: center;
+}
+
+.lstable table th {
+    background-color: #f2f2f2;
+}
+
+.lstable table #dark{
+    background-color: #b5dd78;
+    font-weight: bold;
+}
+
+.lstable table #lastrow{
+    background-color: #b5dd78;
+    font-weight: bold;
+}
+
+/* .lstable button {
+    display: block;
+    /* margin: 20px auto; */
+    /* margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 1em;
+}  */
+
+/* second section */
+#guestandpricet{
+  margin-left: 16%;
+  margin-right: 16%;
+  margin-top: 3%;
+  column-gap: 12%;
+}
+#guestandpricet .guestbox{
+  width: 50%;
+}
+
+#guestandpricet .pricestable{
+width: 50%;
+}
+
+/* ticket count select box */
+.guests{
+  
+  background-color: #e1fdb8 ;
+  border-radius: 1em;
+  padding-top: 15px; 
+  padding-left: 40px;
+  padding-right: 30px;
+  padding-bottom: 1%;
+  border: 1px solid #000000;
+  width: 420px;
+  margin-bottom: 25px;
+}
+
+.guestbox h3{
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 10px;
+}
+
+.guests .container{
+  height: auto;
+  display: flex;
+  margin-top: 15px; 
+}
+
+.guests .container .left{
+  width: 50%;
+}
+.guests .container .left p{
+  margin-bottom: 10px;
+  font-size: 13px;
+  opacity: 0.6;
+}
+.guests .container .right{
+  width: 50%;
+  padding-top: 10px;
+}
+.guests .container .right p{
+  margin-left: 15px;
+}
+.guests .container .right .row span{
+  margin-left: 15px;
+  margin-right: 15px;
+  
+}
+.guests .container .right .row button{
+  padding: 1px 4px 1px 4px;
+  cursor: pointer; 
+}
+.guests .container .right .row{ 
+  margin-bottom: 22px;
+  text-align: right;
+  margin-right: 10%; 
+}
+/* Prices table */
+.pricestable table {
+      border-collapse: collapse;
+      width: 420px;
+      height: 300px;
+      background-color: #e1fdb8 ;
+      margin-bottom: 10px;
+      
+      
+    }
+.pricestable h3{
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 10px;
+}    
+.pricestable table th{
+  background-color: #b5dd78;
+}
+.pricestable th, .pricestable td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+}
+
+
+
+
+/* trick */
+.slots{
+  margin-left: 17%;
+}
+.slots h3{
+  padding-top: 2%;
+  padding-bottom: 10px;
+  margin-left: 12%;
+}
+.checkbox-alias{
+    background-color: #e1fdb8 ;
+    display: inline-block;
+    width: 400px;
+    height: 50px;
+    z-index: 1;
+   transition: all 250ms ease-out;
+   cursor: pointer;
+   border-radius: 1em;
+   margin-bottom: 3px;
+   border: 1px solid black;
+}
+
+.slots .invisible-checkboxes label{
+  text-align: center;
+  padding-top: 15px;
+}
+
+.invisible-checkboxes input[type=checkbox]{
+  display: none;
+}
+
+.invisible-checkboxes input[type=checkbox]:checked + .checkbox-alias{
+    background-color: #afd548;
+}
+
+/* hours count show */
+.hourscountshow{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 35%;
+  margin-right: 35%;
+  text-align: center;
+  line-height: 30px;
+  
+}
+
+.hourscountshow  #boldt{
+  font-weight: bold;
+}
+
+
+/* summary table     */
+/* .summarytable table {
+  border-collapse: collapse;
+  width: 400px;
+  margin: 20px auto;
+  margin-top: 40px;
+}
+
+.summarytable td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+.summarytable .highlight{
+  font-weight: bold;
+  background-color: rgb(134, 179, 238);
+} */
+#helloButton{
+  display: none;
+}
+#chargeupbut{
+ 
+  margin-left: 8%;
+  border: 1px solid black;
+  background:#88B04B;
+  color: white;
+  width: 210px;
+  height: 40px;
+  border-radius: 30px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#chargeupbut:hover{
+    background-color: #bbdf85;
+  color: #000000;
+}
+/* continue with purchase button */
+.conwpurch a {
+      text-decoration: none;
+      
+}
+.conwpurch button{
+  border: 1px solid black;
+  background:#88B04B;
+  color: white;
+  width: 100%;
+  height: 60px;
+  margin-top: 25px;
+  font-size: 20px;
+  
+  cursor: pointer;
+  font-weight: bold;
+}
+.conwpurch button:hover{
+  background-color: #bbdf85;
+  color: #000000;
+}
+.disabled-link0 {
+    pointer-events: none;
+    color: gray;
+    text-decoration: none;
+    cursor: default;
+}
+/* next pageeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
+:root {
+  --success-color: #23cc71;
+  --error-color: #e74c3c;
+}
+/* Section 1 */
+#detandsummary{
+  display: flex;
+  margin-left: 14%;
+  margin-right: 14%;
+  margin-top: 2%;
+  column-gap: 12%;
+}
+#detandsummary .container{
+  width: 50%;
+}
+
+
+
+#detandsummary .lstable{
+  width: 50%;
+  
+}
+
+/* form css */
+
+.container form{
+  background-color: #e1fdb8 ;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 500px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+#detandsummary .container h3 {
+  text-align: center;
+  
+  padding: 5px;
+  margin-bottom: 10px;
+  
+  background-color: #e1fdb8 ;
+}
+
+
+.form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  color: #777;
+  display: block;
+  font-weight: bold;
+}
+.form-control select{
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 12px;
+}
+.form-control select option{
+  padding: 10px;
+}
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  /* display: block; */
+  width: 100%;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: var(--success-color);
+}
+
+.form-control.success select {
+  border-color: var(--success-color);
+}
+
+.form-control.error input {
+  border-color: var(--error-color);
+}
+
+.form-control small {
+  color: var(--error-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form button {
+  cursor: pointer;
+  background:#88B04B;
+  border: 2px solid #88B04B;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+  font-weight: bold;
+}
+.form button:hover{
+  background-color: #bbdf85;
+  color: #000000;
+}
+.form span{
+font-size: 12px;
+opacity: 0.5;
+}
+
+/* Table */
+/* .lstable .tbox{
+  position: fixed;
+} */
+.lstable h3{
+  
+  
+  padding: 5px;
+  padding-left: 180px;
+  padding-right: 150px;
+  margin-bottom: 15px;
+  margin-left: 1px;
+  background-color: #e1fdb8 ;
+  
+  
+  
+}
+.lstable table {
+    border-collapse: collapse;
+    width: 450px;
+    background-color: #e1fdb8 ;
+    font-family: Arial, sans-serif;
+    /* position: fixed; */
+    
+    
+}
+
+.lstable table th, .lstable table td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: center;
+}
+
+.lstable table th {
+    background-color: #f2f2f2;
+}
+
+.lstable table #dark{
+    background-color: #b5dd78;
+    font-weight: bold;
+}
+
+.lstable table #lastrow{
+    background-color: #fac0c0;
+    font-weight: bold;
+}
+
+.lstable button {
+    display: block;
+    /* margin: 20px auto; */
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 1em;
+}
+
+/* continue with purchase button */
+.conwpurch a {
+      text-decoration: none;
+      
+}
+
+.conwpurch button:hover{
+  background-color: #bbdf85;
+  color: #000000;
+}
+ .disabled-link {
+    pointer-events: none;
+    color: gray;
+    text-decoration: none;
+    cursor: default;
+}
+/*Next pageeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee*/
+/* Section 1 */
+#paydetandsummary{
+  display: flex;
+  margin-left: 14%;
+  margin-right: 14%;
+  margin-top: 2%;
+  column-gap: 12%;
+}
+#paydetandsummary .container{
+  width: 50%;
+}
+
+.container h3{
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 10px;
+}
+
+#paydetandsummary .lstable{
+  width: 50%;
+  
+}
+
+/* form css */
+.container form{
+  background-color: #e1fdb8 ;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 500px;
+  margin-top: 20px;
+}
+#paydetandsummary .container h3 {
+  text-align: center;
+  
+  padding: 5px;
+  margin-bottom: 10px;
+  
+  background-color: #e1fdb8 ;
+}
+
+.form2 {
+  padding: 30px 40px;
+}
+
+.form2-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form2-control label {
+  color: #777;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10PX;
+  margin-left: 5PX;
+}
+.form2-control #cvv{
+  width: 60px;
+}
+.form2-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.form2-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form2-control.success input {
+  border-color: var(--success-color);
+}
+
+.form2-control.error input {
+  border-color: var(--error-color);
+}
+
+.form2-control small {
+  color: var(--error-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form2-control.error small {
+  visibility: visible;
+}
+
+.form2 button {
+  cursor: pointer;
+  background:#88B04B;
+  border: 2px solid #88B04B;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.form2 span{
+font-size: 12px;
+opacity: 0.5;
+}
+
+/* table css */
+/* Table */
+/* .lstable .tbox{
+  position: fixed;
+} */
+.lstable h3{
+  
+  
+  padding: 5px;
+  padding-left: 180px;
+  padding-right: 150px;
+  margin-bottom: 15px;
+  margin-left: 1px;
+  background-color: #e1fdb8 ;
+  
+  
+  
+}
+.lstable table {
+    border-collapse: collapse;
+    width: 450px;
+    background-color: #e1fdb8 ;
+    font-family: Arial, sans-serif;
+    /* position: fixed; */
+    
+    
+}
+
+.lstable table th, .lstable table td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: center;
+}
+
+.lstable table th {
+    background-color: #f2f2f2;
+}
+
+.lstable table #dark{
+    background-color: #b5dd78;
+    font-weight: bold;
+}
+
+.lstable table #lastrow{
+    background-color: #fac0c0;
+    font-weight: bold;
+}
+
+.lstable button {
+    display: block;
+    /* margin: 20px auto; */
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 1em;
+}
+
+/* continue with purchase button */
+.conwpurch a {
+      text-decoration: none;
+      
+}
+
+.conwpurch button:hover{
+  background-color: #bbdf85;
+  color: #000000;
+}
+
+/*Next pageeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee*/
+.combox{
+    background-color: #e1fdb8 ;
+    width: 45%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.combox h3{ 
+  background-color: #e1fdb8 ;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+}
+.combox p{
+    text-align: center;
+    border-top: 1px solid rgb(209, 209, 209);
+    padding-top: 15px;
+    width: 95%;
+    margin: auto;
+}
+
+.lstable2 table {
+    border-collapse: collapse;
+    width: 450px;
+    background-color: #e1fdb8 ;
+    font-family: Arial, sans-serif;    
+    margin: auto; 
+    /* margin-left: 20%; */
+    margin-bottom: 50px;
+    
+      
+}
+
+.lstable2 table th, .lstable2 table td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: center;
+}
+
+.lstable2 table th {
+    background-color: #f2f2f2;
+}
+
+.lstable2 table #dark{
+    background-color: #b5dd78;
+    font-weight: bold;
+}
+
+.lstable2 table #lastrow{
+    background-color: #fac0c0;
+    font-weight: bold;
+}
+
+/* Responsiveeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
+@media (max-width:480px){
+
+ 
+/* Section 1 */
+header #desk{
+  display: none;
+}
+.booknav li a{
+  text-decoration: none;
+  color:rgb(122, 122, 122);
+  padding-right: 15px;
+  transition: transform .2s;
+  font-size: 15px;
+  font-weight: bold;
+}
+.booknav li a i{
+  padding-left: 10px;
+}
+header h2{
+  text-align: center;
+  margin-top: 0%;
+  padding-top: 3%;
+  color: white;
+}
+header p{
+  display: none;
+}
+#calandsummary{
+  display: block;
+  
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 0%;
+  column-gap: 0%;
+}
+
+#calandsummary .rscalender{
+  width: 100%;
+}
+.rscalender h3{
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 10px;
+}
+#calandsummary .lstable{
+  width: 100%;
+}
+.container-calendar {
+  width: 380px;
+  height: 370px;
+  margin-left: 7%;
+  border: 1px solid black;
+  padding: 10px;
+  background-color:#e1fdb8;
+  border-radius: 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+#date-picked {
+  text-align: center;
+  padding-top: 3px;
+  margin-left: 15%;
+  color: black;
+  font-size: 18px;
+  border: 1px solid black;
+  width: 300px;
+  height: 30px;border-radius: 1em;
+  background-color: #e1fdb8 ;
+  margin-top: 20px;
+}
+.lstable .tbox{
+  position: relative;
+  overflow: visible;
+  margin-bottom: 0px;
+  
+}
+
+.lstable h3{
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 10px;
+  background-color: white;
+  margin-top: 10px;
+  
+}
+
+.lstable table {
+    border-collapse: collapse;
+    width: 380px;
+    background-color: #e1fdb8 ;
+    font-family: Arial, sans-serif;  
+    margin-left: 5%; 
+     
+}
+
+#guestandpricet{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
+  column-gap: 12%;
+}
+#guestandpricet .guestbox{
+  width: 100%;
+}
+
+#guestandpricet .pricestable{
+width: 100%;
+}
+.guests{
+  
+  background-color: #e1fdb8 ;
+  border-radius: 1em;
+  padding-top: 15px; 
+  padding-left: 40px;
+  padding-right: 30px;
+  padding-bottom: 1%;
+  border: 1px solid #000000;
+  width: 380px;
+  margin-bottom: 25px;
+
+}
+.guestbox h3{
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 10px;
+  margin-left: 5%;
+}
+.pricestable table {
+      border-collapse: collapse;
+      width: 380px;
+      height: 300px;
+      background-color: #e1fdb8 ;
+      margin-bottom: 10px;
+      
+      
+    }
+.slots{
+  margin-left: 4%;
+}  
+.slots h3{
+  padding-top: 2%;
+  padding-bottom: 10px;
+  margin-left: 0%;
+  text-align: center;
+}  
+
+#chargeupbut{
+ 
+  margin-left: 22%;
+  
+  border: 1px solid black;
+  background:#88B04B;
+  color: white;
+  width: 210px;
+  height: 40px;
+  border-radius: 30px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#detandsummary{
+  display: block;
+  
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+  column-gap: 0%;
+}
+#detandsummary .container{
+  width: 100%;
+}
+#detandsummary .lstable{
+  width: 100%;
+  
+}
+.container form{
+  background-color: #e1fdb8 ;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+#detandsummary .container h3 {
+  text-align: center;
+  
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  background-color: #e1fdb8 ;
+}
+.lstable h3{
+  
+  
+  padding: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 1px;
+  background-color: #e1fdb8 ;
+  
+  
+  
+}
+
+.lstable table {
+    border-collapse: collapse;
+    width: 350px;
+    background-color: #e1fdb8 ;
+    font-family: Arial, sans-serif;
+    /* position: fixed; */
+    margin-left: 1%;
+    
+    
+}
+#paydetandsummary{
+  display: block;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 2%;
+  column-gap: 0%;
+}
+#paydetandsummary .container{
+  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#paydetandsummary .lstable{
+  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#paydetandsummary .lstable h3{
+  text-align: center;
+  width: 90%;
+  padding: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 15px;
+  margin-left: 1px;
+  background-color: #e1fdb8 ;
+}
+#paydetandsummary .container h3 {
+  text-align: center;
+  
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 90%;
+  background-color: #e1fdb8 ;
+}
+.combox{
+    background-color: #e1fdb8 ;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.lstable2 table {
+    border-collapse: collapse;
+    width: 360px;
+    background-color: #e1fdb8 ;
+    font-family: Arial, sans-serif;    
+    margin: auto; 
+    /* margin-left: 20%; */
+    margin-bottom: 50px;
+    
+      
+}
+}  
+
+
+
+

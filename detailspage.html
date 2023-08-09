@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Details Page</title>
+
+    <link rel="apple-touch-icon" sizes="120x120" href="appimages/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="appimages/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="appimages/favicon-16x16.png">
+    <link rel="manifest" href="appimages/site.webmanifest">
+    <link rel="mask-icon" href="appimages/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="appimages/favicon.ico">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-config" content="appimages/browserconfig.xml">
+    <meta name="theme-color" content="#000000">
+
+    <script src="https://kit.fontawesome.com/5df66a38fb.js" crossorigin="anonymous"></script>
+
+    
+</head>
+
+<body>
+    <!-- navigation and header -->
+    <header>
+        <li><a href="#"><i class="fa-solid fa-arrow-left"></i> Home</a></li>
+
+        <h2>Buy Tickets</h2>
+        <p>
+            Show your tickets via mobile <br>device or print at home
+        </p>
+    </header>
+    <div class="booknav">
+        <li><a
+                href="file:///C:/Users/Pc/Desktop/Turtle%20website/2nd%20sem%20work/ticketspage.html" id="dactive">Tickets <i class="fa-solid fa-arrow-right"></i></a>
+        </li>
+        <li><a href="#" id="active">Details <i class="fa-solid fa-arrow-right"></i></a></li>
+        <li><a  id="dactive">Payment <i class="fa-solid fa-arrow-right"></i> </a></li>
+        <li><a  id="dactive">Confirmation</a></li>
+    </div>
+    <!-- section 1 -->
+    <section id="detandsummary">
+        <div class="container">
+            <h3>Enter your details </h3>
+            <form id="form" class="form">
+
+                <div class="form-control">
+                    <label for="fullname">Full Name: </label>
+                    <span id="guide">Same as on your ID</span><br>
+                    <input type="text" id="fullname" placeholder="Enter your full name" />
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="mobile">Mobile number</label>
+                    <span id="guide">We may reach out for booking updates here over SMS/Whatsapp</span><br>
+                    <!-- <select id="mobile" name="mobile" >
+                        <option disabled selected>Select your country</option>
+                        <option value="+94">Sri-Lanka</option>
+                        <option value="+001">India</option>
+                        <option value="+009">UK</option>
+                    </select> -->
+                    <input type="tel" name="phone" id="mobile" placeholder="Enter your mobile number" />
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <span id="guide">We'll send your tickets here</span><br>
+                    <input type="text" id="email" placeholder="Enter your E-mail" />
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="email2">Confirm Email</label>
+                    <span id="guide">Just to ensure we've got this right</span><br>
+                    <input type="text" id="email2" placeholder="Enter your E-mail again" />
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" placeholder="select">
+                        <option disabled selected>Select your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <!-- <input type="text" id="gender" placeholder="Enter your E-mail again" /> -->
+                    <small>Error Message</small>
+                </div>
+                <button>Submit !</button>
+            </form>
+        </div>
+
+<!-- <script src="detailspage.js"></script> -->
+
+        <div class="lstable">
+            <div class="tbox">
+                <h3>Order Details</h3>
+                <table id="myTable2">
+                    <tr>
+                        <td>Date</td>
+                        <td id="dateCell"></td>
+                    </tr>
+                    <tr>
+                        <td>Time</td>
+                        <td id="listContainer">07.00 am to 08.00 am</td>
+                    </tr>
+                    <tr>
+                        <td>Duration</td>
+                        <td id="durationc"></td>
+                    </tr>
+                    <tr id="dark">
+                        <td>Tickets</td>
+                        <td>Charges</td>
+                    </tr>
+                    <tr class="rowremove">
+                        <td>1 Foreigner Adult </td>
+                        <td>$ 10</td>
+                    </tr>
+                    <tr id="dark" class="rowremove">
+                        <td>Total Payable</td>
+                        <td>$ 10</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- <button onclick="updateTable()">Update table</button> -->
+
+            <!-- <script src="table.js"></script> -->
+            <!-- <script src="calender.js"></script> -->
+
+        </div>
+    </section>
+    
+
+
+
+
+    <div class="conwpurch">
+        <a id="link1" class="disabled-link" href="file:///C:/Users/Pc/Desktop/Turtle%20website/2nd%20sem%20work/paypage.html">
+            <button >Continue With Purchase</button>
+        </a>
+
+    </div>
+   
+<script src="calender.js"></script>
+
+
+</body>
+
+</html>

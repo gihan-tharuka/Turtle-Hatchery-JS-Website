@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Confirmation Page</title>
+
+    <link rel="apple-touch-icon" sizes="120x120" href="appimages/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="appimages/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="appimages/favicon-16x16.png">
+    <link rel="manifest" href="appimages/site.webmanifest">
+    <link rel="mask-icon" href="appimages/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="appimages/favicon.ico">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-config" content="appimages/browserconfig.xml">
+    <meta name="theme-color" content="#000000">
+    
+    <script src="https://kit.fontawesome.com/5df66a38fb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navigation and header -->
+    <header>
+        <li><a href="file:///C:/Users/Pc/Desktop/Turtle%20website/Github/CB011521/hikka.html"><i class="fa-solid fa-arrow-left"></i> Hikkaduwa Turtle hatchery</a></li>
+    
+        <h2>Buy Tickets</h2>
+        <p>
+            Show your tickets via mobile <br>device or print at home
+        </p>
+    </header>
+    <div class="booknav">
+        <li><a id="dactive" href="file:///C:/Users/Pc/Desktop/Turtle%20website/2nd%20sem%20work/ticketspage.html">Tickets <i class="fa-solid fa-arrow-right"></i></a></li>
+        <li><a id="dactive" href="file:///C:/Users/Pc/Desktop/Turtle%20website/2nd%20sem%20work/detailspage.html">Details <i class="fa-solid fa-arrow-right"></i></a></li>
+        <li><a  id="dactive" href="file:///C:/Users/Pc/Desktop/Turtle%20website/2nd%20sem%20work/paypage.html">Payment <i class="fa-solid fa-arrow-right"></i></a></li>
+        <li><a  id="active" >Confirmation</a></li>
+    </div>
+
+<!-- summary table -->
+<div class="combox">
+    <h3>Confirmation</h3>
+    <p>
+        Thank you for your order. Your order has been confirmed with us. You can show this
+        confirmation at the entrance. Following is the summary of your order.
+    
+    </p>
+</div>
+    
+    <div class="lstable2">
+        
+        <div class="tbox1">
+            <table id="myTable2">
+                <tr>
+                    <td>Name</td>
+                    <td id="namec"></td>
+                </tr>
+                <tr>
+                    <td>Date</td>
+                    <td id="dateCell"></td>
+                </tr>
+                <tr>
+                    <td>Time</td>
+                    <td id="listContainer">07.00 am to 08.00 am</td>
+                </tr>
+                <tr>
+                    <td>Duration</td>
+                    <td id="durationc"></td>
+                </tr>
+                <tr>
+                    <td>Mobile</td>
+                    <td id="mobilec"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td id="emailc"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td id="genderc"></td>
+                </tr>
+                <tr id="dark">
+                    <td>Tickets</td>
+                    <td>Charges</td>
+                </tr>
+                <tr class="rowremove">
+                    <td>1 Foreigner Adult </td>
+                    <td>$ 10</td>
+                </tr>
+                <tr id="dark" class="rowremove">
+                    <td>Total Payable</td>
+                    <td>$ 10</td>
+                </tr>
+            </table>
+            
+        </div> 
+    
+    </div>
+    
+    <script src="calender.js"></script>
+    
+</body>
+</html>
+
