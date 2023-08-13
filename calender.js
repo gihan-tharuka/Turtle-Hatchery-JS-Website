@@ -925,7 +925,7 @@ function showError2(input, message) {
   const small = form2Control.querySelector('small');
   small.innerText = message;
 
-  const link1 = document.getElementById('link1');
+  const link1 = document.getElementById('link2');
   link1.classList.add('disabled-link');
 }
 
@@ -934,7 +934,7 @@ function showSuccess2(input) {
   form2Control = input.parentElement;
   form2Control.className = 'form2-control success';
 
-  const link1 = document.getElementById('link1');
+  const link1 = document.getElementById('link2');
   link1.classList.remove('disabled-link');
 }
 
