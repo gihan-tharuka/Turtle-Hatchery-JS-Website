@@ -924,12 +924,18 @@ function showError2(input, message) {
   form2Control.className = 'form2-control error';
   const small = form2Control.querySelector('small');
   small.innerText = message;
+
+  const link1 = document.getElementById('link1');
+  link1.classList.add('disabled-link');
 }
 
 // show success message
 function showSuccess2(input) {
   form2Control = input.parentElement;
   form2Control.className = 'form2-control success';
+
+  const link1 = document.getElementById('link1');
+  link1.classList.remove('disabled-link');
 }
 
 //check cvv is valid
