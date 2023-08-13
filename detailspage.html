@@ -21,6 +21,9 @@
 
     <script src="https://kit.fontawesome.com/5df66a38fb.js" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
     
 </head>
 
@@ -36,7 +39,7 @@
     </header>
     <div class="booknav">
         <li><a
-                href="ticketspage.html" id="dactive">Tickets <i class="fa-solid fa-arrow-right"></i></a>
+                href="file:///C:/Users/Pc/Desktop/Turtle%20website/2nd%20sem%20work/ticketspage.html" id="dactive">Tickets <i class="fa-solid fa-arrow-right"></i></a>
         </li>
         <li><a href="#" id="active">Details <i class="fa-solid fa-arrow-right"></i></a></li>
         <li><a  id="dactive">Payment <i class="fa-solid fa-arrow-right"></i> </a></li>
@@ -63,8 +66,15 @@
                         <option value="+001">India</option>
                         <option value="+009">UK</option>
                     </select> -->
-                    <input type="tel" name="phone" id="mobile" placeholder="Enter your mobile number" />
+                    <input type="tel" name="phone" id="phone" placeholder="Enter your mobile number" required maxlength="10"/>
                     <small>Error Message</small>
+                    <!-- <div class="container">
+                        <form id="login" onsubmit="process(event)">
+                            <p>Enter your phone number:</p>
+                            <input id="phone" type="tel" name="phone" />
+                            <input type="submit" class="btn" value="Verify" />
+                        </form>
+                    </div> -->
                 </div>
                 <div class="form-control">
                     <label for="email">Email</label>
@@ -105,7 +115,7 @@
                     </tr>
                     <tr>
                         <td>Time</td>
-                        <td id="listContainer">07.00 am to 08.00 am</td>
+                        <td>07.00 am to 08.00 am</td>
                     </tr>
                     <tr>
                         <td>Duration</td>
@@ -139,13 +149,20 @@
 
 
     <div class="conwpurch">
-        <a id="link1" class="disabled-link" href="paypage.html">
+        <a id="link1" class="disabled-link" href="file:///C:/Users/Pc/Desktop/Turtle%20website/2nd%20sem%20work/paypage.html">
             <button >Continue With Purchase</button>
         </a>
 
     </div>
    
 <script src="calender.js"></script>
+<script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+        utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+</script>
 
 
 </body>
