@@ -14,7 +14,8 @@ This website is developed mainly to showcase the HTML, CSS, and JavaScript skill
   - Choose the number of tickets from four ticket categories.
   - Select time slots to watch the hatchery.
   - View an order summary.
-  - End the booking process by filling out the billing form.
+  - Fill contact information form.
+  - Fill payment information form.
 - Mobile responsive design.
 
 ## Installation
@@ -30,9 +31,16 @@ To use the website:
 4. Use the booking feature to reserve tickets by selecting the date, ticket quantity, and time slots. Fill out the billing form to complete the process.
 
 ## Screenshots
-![Home Page](path/to/homepage-screenshot.png)
-![Sea Turtle Information](path/to/turtle-info-screenshot.png)
-![Booking Page](path/to/booking-page-screenshot.png)
+![Home Page](Images/screenshots/home.jpeg)
+![Sea Turtle Information](Images/screenshots/categories.jpeg)
+![Booking Page](Images/screenshots/threats.jpeg)
+![Booking Page](Images/screenshots/hatchery.jpeg)
+![Booking Page](Images/screenshots/products.jpeg)
+![Booking Page](Images/screenshots/donate.jpeg)
+![Booking Page](Images/screenshots/booking.jpeg)
+![Booking Page](Images/screenshots/billing.jpeg)
+![Booking Page](Images/screenshots/payment.jpeg)
+![Booking Page](Images/screenshots/confirmation.jpeg)
 
 ## Technologies Used
 - HTML
