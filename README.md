@@ -30,6 +30,11 @@ To use the website:
 3. Visit the donation page to view the donation form.
 4. Use the booking feature to reserve tickets by selecting the date, ticket quantity, and time slots. Fill out the billing form to complete the process.
 
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+
 ## Screenshots
 ![Home Page](Images/screenshots/home.jpeg)
 ![Sea Turtle Information](Images/screenshots/categories.jpeg)
@@ -41,11 +46,6 @@ To use the website:
 ![Booking Page](Images/screenshots/billing.jpeg)
 ![Booking Page](Images/screenshots/payment.jpeg)
 ![Booking Page](Images/screenshots/confirmation.jpeg)
-
-## Technologies Used
-- HTML
-- CSS
-- JavaScript
 
 ## Authors
 - Gihan Tharuka
