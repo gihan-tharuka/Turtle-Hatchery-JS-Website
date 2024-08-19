@@ -35,6 +35,11 @@ To use the website:
 - CSS
 - JavaScript
 
+![HTML](assets/logos/HTML.png)
+![CSS](assets/logos/CSS.png)
+![JavaScript](assets/logos/JS.png)
+
+
 ## Screenshots
 ![Home Page](Images/screenshots/home.jpeg)
 ![Sea Turtle Information](Images/screenshots/categories.jpeg)
