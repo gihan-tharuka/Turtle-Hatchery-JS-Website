@@ -34,10 +34,13 @@ To use the website:
 - HTML
 - CSS
 - JavaScript
+-
+<div style="display: flex; align-items: center;">
+    <img src="Images/logos/HTML.png" alt="HTML" width="100" height="100">
+    <img src="Images/logos/CSS.png" alt="CSS" width="100" height="100">
+    <img src="Images/logos/JS.png" alt="JavaScript" width="200" height="100">
+</div>
 
-![HTML](assets/logos/HTML.png)
-![CSS](assets/logos/CSS.png)
-![JavaScript](assets/logos/JS.png)
 
 
 ## Screenshots
